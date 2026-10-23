@@ -1,0 +1,22 @@
+python-dotenv>=1.0.0
+pyyaml>=6.0
+rich>=13.7.0
+tqdm>=4.66.0
+ffmpeg-python>=0.2.0
+scenedetect[opencv]>=0.6.4
+faster-whisper>=1.0.3
+whisperx>=3.1.5
+torch>=2.1.0
+torchaudio>=2.1.0
+anthropic>=0.34.0
+openai>=1.30.0
+google-generativeai>=0.7.0
+
+# Optional extras:
+#   hf_xet           - faster HuggingFace model downloads (Whisper weights,
+#                      wav2vec2 align models). Removes the "Xet Storage is
+#                      enabled ... hf_xet is not installed" notice during
+#                      Stage 2. Install with: pip install hf_xet
+#   torchcodec       - only needed if you use pyannote audio decoding directly.
+#                      WhisperX passes waveforms in memory, so this project does
+#                      not need it, and a failed import merely logs a warning.

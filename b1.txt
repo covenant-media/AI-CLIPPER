@@ -1,0 +1,1 @@
+{"error":{"message":"unauthorized client detected, contact support for assistance at https://discord.gg/HgekCyHJqB"},"message":"UNAUTHENTICATED","success":false,"type":"unauthorized_client_error"}

@@ -1,0 +1,26 @@
+video:
+  target_clip_min_seconds: 20
+  target_clip_max_seconds: 90
+  max_clips: 10
+
+scenes:
+  threshold: 27.0
+  min_scene_len_frames: 15
+  # Decode every (frame_skip + 1)th frame. 0 = every frame (most accurate).
+  # Raise to 2-3 on high framerate footage to cut this stage's runtime.
+  frame_skip: 0
+  # A single continuous shot has no hard cuts, so 0 scenes is a valid result.
+  # When 0 scenes are found, split the timeline every N seconds so clip edges
+  # can still snap to a boundary. 0 = disable.
+  fallback_interval_seconds: 0
+
+edit:
+  cut_mode: lossless
+  fade_seconds: 0.0
+  snap_to_scene_seconds: 1.5
+  output_width: null
+  output_height: null
+
+audio:
+  sample_rate: 16000
+  channels: 1
